@@ -42,10 +42,5 @@ $(document).ready(function () {
     const kategori = $(this).data('kategori');
     $('h1').text(kategori);
     tampilkanMenu(kategori);
-});
-    
-    $(document).on('click', '.btn-pesan', function (){
-        alert('Terima kasih, pesanan Anda telah diterima!');
     });
-
  }); 
