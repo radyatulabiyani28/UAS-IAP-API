@@ -16,8 +16,8 @@ $(document).ready(function () {
                 <div class="card-body">
                   <h5 class="card-title">${item.nama}</h5>
                   <p class="card-text">${item.deskripsi || ''}</p>
-                  <p class="card-text"><strong>Rp. ${Number(item.harga).toLocaleString('id-ID')}
-</strong></p>
+                  <p class="card-text"><strong>Rp. ${Number(item.harga).toLocaleString('id-ID')}</strong></p>
+                  <a href="#" class="btn btn-danger btn-block btn-pesan">Pesan Sekarang</a>
                 </div>
               </div>
             </div>
@@ -42,5 +42,10 @@ $(document).ready(function () {
     const kategori = $(this).data('kategori');
     $('h1').text(kategori);
     tampilkanMenu(kategori);
-  });
 });
+    
+    $(document).on('click', '.btn-pesan', function (){
+        alert('Terima kasih, pesanan Anda telah diterima!');
+    });
+
+ }); 

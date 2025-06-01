@@ -36,6 +36,7 @@ $media = get_CURL("https://graph.instagram.com/me/media?fields=id,caption,media_
 $gambar = "";
 if (isset($media['data']) && count($media['data']) >= 1) {
     $gambar = $media['data'][0]['media_url'];
+
 }
 ?>
 
@@ -83,9 +84,9 @@ if (isset($media['data']) && count($media['data']) >= 1) {
     <div class="jumbotron" id="home">
       <div class="container">
         <div class="text-center">
-          <img src="img/profile4.png" class="rounded-circle img-thumbnail">
-          <h1 class="display-4">Radyatul Abiyani</h1>
-          <h3 class="lead">Lecturer | Programmer | Youtuber</h3>
+          <img src="img/profile5.png" class="rounded-circle img-thumbnail">
+          <h1 class="display-6">Radyatul Abiyani</h1>
+          <h3 class="lead">Student | Programmer | Art Lover</h3>
         </div>
       </div>
     </div>
@@ -101,10 +102,10 @@ if (isset($media['data']) && count($media['data']) >= 1) {
         </div>
         <div class="row justify-content-center">
           <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+            <p>Haii, namaku Radyatul Abiyani, aku seorang mahasiswa program studi Sistem Informasi yang fokus belajar pemrograman dan teknologi informasi, dengan pemahaman teknologi yang aku miliki, aku berusaha menciptakan solusi yang efisien dan bermanfaat.</p>
           </div>
           <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+            <p>Di luar coding, aku sangat menyukai seni, terutama bernyanyi dan menari. Seni memberiku ruang untuk mengekspresikan diri dan inspirasi baru. Aku percaya kombinasi antara teknologi dan seni membuatku jadi pribadi yang lebih seimbang.</p>
           </div>
         </div>
       </div>
@@ -144,15 +145,17 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             </div> 
           </div>
           
-          <div class="col-md-5 mb-4">
-          <div class="row" pt-4 mb-4>
+          <div class="col-md-5">
+          <div class="row">
             <div class="col-md-4">
-              <img src="<?= $profilePictureIG; ?>" width="120" class="rounded-circle
+              <img src="<?= $profilePictureIG; ?>" width="200" class="rounded-circle
               img-thumbnail">
             </div>
              <div class="col-md-8">
                 <h5><?= $usernameIG; ?></h5>
                 <p><?= $followersIG; ?> Followers</p>
+                <img src="<?= $gambar ?>" alt="Gambar Instagram" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+
               </div> 
             </div>
   </section>
@@ -171,7 +174,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Pizza Hut.</p>
               </div>
             </div>
           </div>
@@ -180,7 +183,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">WPU-Movie.</p>
               </div>
             </div>
           </div>
@@ -189,7 +192,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Portfolio.</p>
               </div>
             </div>
           </div>   
@@ -200,7 +203,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">WPU-Rest-Server.</p>
               </div>
             </div>
           </div> 
@@ -208,7 +211,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">WPU-Rest-Client.
                 </p>
               </div>
             </div>
@@ -218,7 +221,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">JSON.</p>
               </div>
             </div>
           </div>
@@ -248,8 +251,8 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <ul class="list-group mb-4">
               <li class="list-group-item"><h3>Location</h3></li>
               <li class="list-group-item">My Office</li>
-              <li class="list-group-item">Jl. Setiabudhi No. 193, Bandung</li>
-              <li class="list-group-item">West Java, Indonesia</li>
+              <li class="list-group-item">Jl. Lintas Sumatera, Sijunjung</li>
+              <li class="list-group-item">West Sumatera, Indonesia</li>
             </ul>
           </div>
 
@@ -288,7 +291,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <p>Copyright &copy; 2018.</p>
+            <p>Copyright &copy; 2025.</p>
           </div>
         </div>
       </div>
