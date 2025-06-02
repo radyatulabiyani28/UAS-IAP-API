@@ -154,7 +154,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
              <div class="col-md-8">
                 <h5><?= $usernameIG; ?></h5>
                 <p><?= $followersIG; ?> Followers</p>
-                <img src="<?= $gambar ?>" alt="Gambar Instagram" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                <img src="<?= $gambar ?>" alt="Gambar Instagram" class="img-fluid center" style="max-width: 260px; height: auto;">
                 
               </div> 
             </div>
